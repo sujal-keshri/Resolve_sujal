@@ -1,0 +1,141 @@
+[debug] [2024-04-20T17:18:55.500Z] ----------------------------------------------------------------------
+[debug] [2024-04-20T17:18:55.502Z] Command:       /usr/bin/node /home/sujal/.npm-global/bin/firebase init
+[debug] [2024-04-20T17:18:55.502Z] CLI Version:   13.7.3
+[debug] [2024-04-20T17:18:55.503Z] Platform:      linux
+[debug] [2024-04-20T17:18:55.503Z] Node Version:  v18.19.0
+[debug] [2024-04-20T17:18:55.503Z] Time:          Sat Apr 20 2024 22:48:55 GMT+0530 (India Standard Time)
+[debug] [2024-04-20T17:18:55.503Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-20T17:18:55.508Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-20T17:18:55.509Z] > authorizing via signed-in user (sujalkeshri1711@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/sujal/dass4/dass-project-spring-2024-team-26/code/frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-20T17:22:41.872Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-20T17:22:42.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-20T17:22:42.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project resolve-12f6e (Resolve) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-04-20T17:23:07.762Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-20T17:23:07.762Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:09.636Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-20T17:23:09.637Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com [omitted]
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-04-20T17:23:09.640Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-04-20T17:23:09.640Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:11.682Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-04-20T17:23:11.682Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-04-20T17:23:21.691Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-20T17:23:21.691Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:23.357Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-20T17:23:23.357Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-04-20T17:23:23.360Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e [none]
+[debug] [2024-04-20T17:23:23.765Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e 200
+[debug] [2024-04-20T17:23:23.765Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e {"projectId":"resolve-12f6e","projectNumber":"586594678961","displayName":"Resolve","name":"projects/resolve-12f6e","resources":{"hostingSite":"resolve-12f6e"},"state":"ACTIVE","etag":"1_bed712f4-e977-40d9-8914-32039d25abe3"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] ✔  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[debug] [2024-04-20T17:23:38.663Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-20T17:23:38.664Z] > authorizing via signed-in user (sujalkeshri1711@gmail.com)
+[debug] [2024-04-20T17:23:38.664Z] [iam] checking project resolve-12f6e for permissions ["firebase.projects.get"]
+[debug] [2024-04-20T17:23:38.666Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/resolve-12f6e:testIamPermissions [none]
+[debug] [2024-04-20T17:23:38.666Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/resolve-12f6e:testIamPermissions x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:38.666Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resolve-12f6e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-20T17:23:40.153Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/resolve-12f6e:testIamPermissions 200
+[debug] [2024-04-20T17:23:40.154Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resolve-12f6e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-20T17:23:40.155Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-20T17:23:40.155Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:40.158Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-04-20T17:23:40.158Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:41.793Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-20T17:23:41.794Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-04-20T17:23:41.794Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-04-20T17:23:41.794Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:41.799Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/runtimeconfig.googleapis.com 200
+[debug] [2024-04-20T17:23:41.800Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-04-20T17:23:43.841Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-04-20T17:23:43.841Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-04-20T17:23:53.850Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-20T17:23:53.851Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/resolve-12f6e
+[debug] [2024-04-20T17:23:55.515Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-20T17:23:55.515Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/resolve-12f6e/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-04-20T17:25:25.561Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e [none]
+[debug] [2024-04-20T17:25:26.044Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e 200
+[debug] [2024-04-20T17:25:26.044Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resolve-12f6e {"projectId":"resolve-12f6e","projectNumber":"586594678961","displayName":"Resolve","name":"projects/resolve-12f6e","resources":{"hostingSite":"resolve-12f6e"},"state":"ACTIVE","etag":"1_bed712f4-e977-40d9-8914-32039d25abe3"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-04-20T17:25:42.837Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-04-20T17:25:42.973Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-04-20T17:25:42.974Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.11.0","browserURL":"https://www.gstatic.com/firebasejs/10.11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.11.0/firebase.tgz"},"live":{"version":"10.11","browserURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.11.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.11.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.11.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.11.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.11.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.11.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote y/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/sujal/dass4/dass-project-spring-2024-team-26 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=740812193&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-04-20T17:26:36.066Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-04-20T17:26:36.067Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-04-20T17:26:36.568Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-04-20T17:26:36.569Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-04-20T17:26:36.586Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-04-20T17:26:37.025Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-04-20T17:26:37.026Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"sujal-keshri","id":127511123,"node_id":"U_kgDOB5mqUw","avatar_url":"https://avatars.githubusercontent.com/u/127511123?v=4","gravatar_id":"","url":"https://api.github.com/users/sujal-keshri","html_url":"https://github.com/sujal-keshri","followers_url":"https://api.github.com/users/sujal-keshri/followers","following_url":"https://api.github.com/users/sujal-keshri/following{/other_user}","gists_url":"https://api.github.com/users/sujal-keshri/gists{/gist_id}","starred_url":"https://api.github.com/users/sujal-keshri/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sujal-keshri/subscriptions","organizations_url":"https://api.github.com/users/sujal-keshri/orgs","repos_url":"https://api.github.com/users/sujal-keshri/repos","events_url":"https://api.github.com/users/sujal-keshri/events{/privacy}","received_events_url":"https://api.github.com/users/sujal-keshri/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2023-03-10T13:47:21Z","updated_at":"2024-04-10T13:52:16Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":19021,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] ✔  Success! Logged into GitHub as sujal-keshri 
+[info] 
+[debug] [2024-04-20T17:26:53.950Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-04-20T17:26:54.383Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-04-20T17:26:54.383Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
